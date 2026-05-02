@@ -94,6 +94,10 @@ app.post("/data", (req, res) => {
   res.send("Updated");
 });
 
+app.get("/", (req, res) => {
+  res.send("Backend is working 🚀");
+});
+
 app.get("/data", (req, res) => {
   res.json(cameras);
 });
