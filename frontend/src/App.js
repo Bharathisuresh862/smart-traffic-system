@@ -35,7 +35,9 @@ function App() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      axios.get("http://127.0.0.1:5000/data")
+      // axios.get("http://127.0.0.1:5000/data")
+        axios.get("https://smart-traffic-system-ea56.onrender.com/data")
+
         .then(res => {
           setData(res.data);
 
@@ -173,7 +175,8 @@ function App() {
             style={{ borderRadius: "10px" }}
           >
             <source
-              src={`http://127.0.0.1:5000/videos/${selectedCamera.video}`}
+              // src={`http://127.0.0.1:5000/videos/${selectedCamera.video}`}
+                src={`https://smart-traffic-system-ea56.onrender.com/videos/${selectedCamera.video}`}
               type="video/mp4"
             />
           </video>
