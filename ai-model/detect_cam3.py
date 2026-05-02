@@ -31,7 +31,9 @@ while True:
     print(f"[Cam1] Vehicles: {vehicle_count}, People: {people_count}")
 
     try:
-        requests.post("http://127.0.0.1:5000/data", json={
+        # requests.post("http://127.0.0.1:5000/data", json={
+                requests.post("https://smart-traffic-system-ea56.onrender.com/data", json={
+
             "cameraId": CAMERA_ID,
             "vehicles": vehicle_count,
             "people": people_count
