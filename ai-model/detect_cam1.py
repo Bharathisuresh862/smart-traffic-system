@@ -34,7 +34,7 @@ while True:
         # requests.post("http://127.0.0.1:5000/data", json={
                 requests.post("https://smart-traffic-system-ea56.onrender.com/data", json={
 
-            "cameraId": CAMERA_ID,
+            "cameraId": "69f609a6ca12831a61700cb2",
             "vehicles": vehicle_count,
             "people": people_count
         })
